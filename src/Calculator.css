@@ -1,0 +1,48 @@
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .result {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .history {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history li {
+    margin: 5px 0;
+  }
+  
+  .history button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+      
+  
