@@ -7,6 +7,7 @@ const Calculator = () => {
   const [history, setHistory] = useState([]);
 
   const handleButtonClick = (value) => setInput((prev) => prev + value);
+
   const handleCalculation = () => {
     const calculatedResult = eval(input);
     setResult(calculatedResult);
@@ -14,12 +15,14 @@ const Calculator = () => {
       ...prev,
       { expression: input, result: calculatedResult },
     ]);
-    setInput("");
+    setInput(calculatedResult.toString());
   };
+
   const handleReset = () => {
     setInput("");
     setResult(0);
   };
+
   const handleClearHistory = () => setHistory([]);
 
   const buttons = [
